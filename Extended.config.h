@@ -12,7 +12,7 @@
 // Note that the SERIAL_DEBUG port cannot be used for normal communication with OnStep
 
 //      Parameter Name              Value        Default  Notes                                                                 Hint
-#define DEBUG                         OFF //         OFF, Use ON for background error messages only, use VERBOSE for all      Infreq
+#define DEBUG                         REMOTE //         OFF, Use ON for background error messages only, use VERBOSE for all      Infreq
                                           //              error and status messages, use PROFILER for VT100 task profiler,
                                           //              use REMOTE to forward verbose debug output to OnStep
 #define SERIAL_DEBUG               Serial //      Serial, Or use any h/w serial port. Serial1 or Serial2, etc. as supported.  Option

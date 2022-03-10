@@ -101,6 +101,8 @@ void setup(void) {
   #endif
 
   // attempt to connect to OnStep
+//delay(4000); //Wait for OnStep to start up a bit!
+
   int serialSwap = OFF;
   if (OPERATIONAL_MODE == WIFI) serialSwap = SERIAL_SWAP;
   if (serialSwap == AUTO) serialSwap = AUTO_OFF;
@@ -134,7 +136,7 @@ Again:
     serialBegin(serial_baud, serialSwap);
 
     connected = true;
-    VLF("SWS: OnStep Connection established");
+	VLF("SWS: OnStep Connection established");
   } else {
     if (DEBUG == ON || DEBUG == VERBOSE) { VF("SWS: No valid reply found ("); V(s); VL(")"); }
     #if LED_STATUS == ON
