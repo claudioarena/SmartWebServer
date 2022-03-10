@@ -121,6 +121,8 @@ void setup(void) {
   #endif
 
   // attempt to connect to OnStep
+//delay(4000); //Wait for OnStep to start up a bit!
+
   int serialSwap = OFF;
   if (OPERATIONAL_MODE == WIFI) serialSwap = SERIAL_SWAP;
   if (serialSwap == AUTO) serialSwap = AUTO_OFF;
