@@ -1,5 +1,6 @@
-
-*.json
-esp32.svd
-debug.cfg
-debug.svd
+.vscode/*
+test/*
+.pio/*
+/include/README
+/lib/README
+/lib/*
