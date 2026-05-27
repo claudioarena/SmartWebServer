@@ -53,11 +53,11 @@
 #define DISPLAY_LANGUAGE             L_en //   L_en, English. Or L_ca, L_cn, L_de, L_en, L_es, L_fr, L_it, L_jp, L_us.        Adjust
                                           //         Two letter country code (see Locales.h for more information.)
 #define DISPLAY_WEATHER                ON //     ON, ON ambient conditions in locale default units.                           Option
-#define DISPLAY_INTERNAL_TEMPERATURE  OFF //    OFF, ON internal MCU temp. in locale default units.                           Option
+#define DISPLAY_INTERNAL_TEMPERATURE  ON //    OFF, ON internal MCU temp. in locale default units.                           Option
 #define DISPLAY_RESET_CONTROLS         ON //     ON, ON allows reset if supported, FWU for STM32 firmware upload pin HIGH.    Option
 #define DISPLAY_COORDINATE_ORIGIN      ON //    OFF, ON to display the coordinate origin control tile on the mount page.      Option
 #define DISPLAY_SERVO_MONITOR         OFF //    OFF, ON to display the servo monitor for OnStepX (any axis.)                  Option
-#define DISPLAY_SPECIAL_CHARS ON          //     ON, For standard ASCII special symbols (compatibility.)                      Infreq
+#define DISPLAY_SPECIAL_CHARS         ON  //     ON, For standard ASCII special symbols (compatibility.)                      Infreq
 #define DISPLAY_HIGH_PRECISION_COORDS ON  //    OFF, ON for high precision coordinate display on status page.                 Infreq
 
 // DRIVE CONFIGURATION -------------------------------------------------------------------------------------------------------------
