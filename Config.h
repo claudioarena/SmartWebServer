@@ -35,7 +35,7 @@
                                           //         The OnStep serial port this is wired to must use the same rate above.
 #define SERIAL_BAUD                  9600 // 115200, Or use 19200,57600,115200,230400,460800 (not all devices support > 115200)
                                           //         (OnStep and here.)  Automatically uses 19200 if talking to a Mega2560 OnStep.
-#define SERIAL_SWAP                  OFF  //   AUTO, Automatic check both, ON for swapped port or OFF for default port only.  Infreq
+#define SERIAL_SWAP                  ON  //   AUTO, Automatic check both, ON for swapped port or OFF for default port only.  Infreq
                                           //         this option is ignored in ETHERNET modes
 
 // BLE GAMEPAD SETTINGS (ESP32 ONLY) ------------------------------------------------ see https://onstep.groups.io/g/main/wiki/26762
@@ -50,15 +50,15 @@
 #define LED_STATUS                     ON //     ON, Enable LED flashes while connecting then steady once connected.          Infreq
 
 // DISPLAY -------------------------------------------------------------------------------------------------------------------------
-#define DISPLAY_LANGUAGE             L_en //   L_en, English. Or L_ca, L_cn, L_de, L_en, L_es, L_fr, L_it, L_jp, L_us.        Adjust
-                                          //         Two letter country code (see Locales.h for more information.)
-#define DISPLAY_WEATHER                ON //     ON, ON ambient conditions in locale default units.                           Option
+#define DISPLAY_LANGUAGE             L_en //   L_en, English. Specify language with two letter country code, if supported.    Adjust
+#define DISPLAY_WEATHER               ON //    OFF, ON ambient conditions in locale default units.                           Option
 #define DISPLAY_INTERNAL_TEMPERATURE  ON //    OFF, ON internal MCU temp. in locale default units.                           Option
-#define DISPLAY_RESET_CONTROLS         ON //     ON, ON allows reset if supported, FWU for STM32 firmware upload pin HIGH.    Option
-#define DISPLAY_COORDINATE_ORIGIN      ON //    OFF, ON to display the coordinate origin control tile on the mount page.      Option
-#define DISPLAY_SERVO_MONITOR         OFF //    OFF, ON to display the servo monitor for OnStepX (any axis.)                  Option
-#define DISPLAY_SPECIAL_CHARS         ON  //     ON, For standard ASCII special symbols (compatibility.)                      Infreq
-#define DISPLAY_HIGH_PRECISION_COORDS ON  //    OFF, ON for high precision coordinate display on status page.                 Infreq
+#define DISPLAY_WIFI_SIGNAL_STRENGTH   ON //     ON, Wireless signal strength reported via web interface. OFF otherwise.      Option
+#define DISPLAY_RESET_CONTROLS         ON //     ON, ON to allow reset of OnStep, FWU for STM32 firmware upload pin HIGH.     Option
+
+#define DISPLAY_SPECIAL_CHARS          ON //     ON, For standard ASCII special symbols (compatibility.)                      Infreq
+#define DISPLAY_ADVANCED_CHARS         ON //     ON, For standard "RA/Dec" instead of symbols.                                Infreq
+#define DISPLAY_HIGH_PRECISION_COORDS ON //    OFF, ON for high precision coordinate display on status page.                 Infreq
 
 // DRIVE CONFIGURATION -------------------------------------------------------------------------------------------------------------
 #define DRIVE_CONFIGURATION ON        //    ON, to display/modify mount, rotator, focuser settings                        Option
