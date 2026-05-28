@@ -136,7 +136,7 @@ void setup(void) {
   #endif
 
   // attempt to connect to OnStep
-//delay(4000); //Wait for OnStep to start up a bit!
+delay(2000); //Wait for OnStep to start up a bit!
 
   int serialSwap = OFF;
   serialSwap = SERIAL_SWAP;
